@@ -1,0 +1,22 @@
+:root{--accent:#1b5e20;--muted:#666;--bg:#fafafa}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;color:#111;background:var(--bg);line-height:1.5}
+.container{max-width:1000px;margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #eee}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header h1{margin:0;font-size:1.25rem;color:var(--accent)}
+nav a{margin-left:1rem;text-decoration:none;color:var(--muted)}
+.hero{padding:3rem 0;background:linear-gradient(180deg,#fff,#f7fff7);text-align:center}
+.hero h2{margin:0 0 .5rem}
+.cta{display:inline-block;margin-top:1rem;padding:.6rem 1rem;border-radius:6px;background:var(--accent);color:#fff;text-decoration:none}
+.services .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+.price{font-weight:600;color:var(--accent)}
+.book form{display:grid;gap:.6rem;max-width:540px}
+.book label{display:block}
+.book input,.book select{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:6px}
+.btn{background:var(--accent);color:#fff;padding:.6rem 1rem;border:none;border-radius:6px;cursor:pointer}
+.btn-pay{display:inline-block;margin-top:.5rem;padding:.5rem .9rem;border-radius:6px;background:#ffc107;color:#111;text-decoration:none}
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted);margin-top:2rem}
+.message{margin-top:1rem;color:green}
+@media (max-width:600px){.site-header .container{flex-direction:column;gap:.6rem}}

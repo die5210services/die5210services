@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ht">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Die5210Services — Pran sèvis fasil</title>
+  <meta name="description" content="Die5210Services — Rezève sèvis pwofesyonèl fasilman."> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Die5210Services</h1>
+      <nav>
+        <a href="#services">Sèvis</a>
+        <a href="#book">Pran Sèvis</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Tèm</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Sèvis pwofesyonèl — senp, rapid, fyab</h2>
+        <p>Nou ofri konsiltasyon, tradiksyon, ak sèvis design. Rezève fasil sou entènèt.</p>
+        <a class="cta" href="#book">Rezève kounye a</a>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h3>Sèvis nou yo</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Konsiltasyon</h4>
+          <p>Sesyon 30–60 minit pou konsèy pèsonèl oswa pwofesyonèl.</p>
+          <p class="price">Pri depi: $15</p>
+        </article>
+        <article class="card">
+          <h4>Tradiksyon</h4>
+          <p>Tradiksyon dokiman Kreyòl ↔ Anglè.</p>
+          <p class="price">Pri sou demann</p>
+        </article>
+        <article class="card">
+          <h4>Design & Branding</h4>
+          <p>Logo, Flyers, ak materyèl maketing.</p>
+          <p class="price">Pri sou demann</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="book" class="container book">
+      <h3>Pran sèvis / Rezèvasyon</h3>
+      <p>Ranpli fòm anba a pou rezève yon sesyon. N ap kontakte w pou konfime.</p>
+
+      <!-- Replace action with your Formspree or Netlify Forms endpoint -->
+      <form id="bookingForm" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Non konplè
+          <input type="text" name="name" required>
+        </label>
+
+        <label>Imèl
+          <input type="email" name="email" required>
+        </label>
+
+        <label>Nimewo telefòn
+          <input type="tel" name="phone" required>
+        </label>
+
+        <label>Sèvis ou vle
+          <select name="service" required>
+            <option value="konsiltasyon">Konsiltasyon</option>
+            <option value="tradiksyon">Tradiksyon</option>
+            <option value="design">Design</option>
+          </select>
+        </label>
+
+        <label>Dat preferab / Komantè
+          <input type="text" name="date" placeholder="Eg: 2025-11-10 oswa 'Itil'">
+        </label>
+
+        <button type="submit" class="btn">Voye rezèvasyon</button>
+      </form>
+
+      <div class="payment">
+        <h4>Peye kounye a (opsyonèl)</h4>
+        <p>Ou ka peye via PayPal pou garanti resevasyon an.</p>
+        <!-- Replace this link with your PayPal.me or merchant checkout -->
+        <a class="btn-pay" href="https://www.paypal.me/die5210services" target="_blank" rel="noopener">Peye sou PayPal</a>
+      </div>
+
+      <div id="message" class="message" aria-live="polite"></div>
+    </section>
+
+    <section class="container contact">
+      <h3>Kontakte nou</h3>
+      <p>Imèl: <a href="mailto:die5210services@gmail.com">die5210services@gmail.com</a></p>
+      <p>WhatsApp Biznis: <a href="https://wa.me/50938892767" target="_blank" rel="noopener">+509 3889 2767</a></p>
+      <p>Nimewo pou apèl: +509 5531 4859 (Ayiti) / +1 954 416 0303 (Etazini)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Die5210Services — Tout dwa rezève.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
